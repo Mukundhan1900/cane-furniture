@@ -1,0 +1,21 @@
+.carousel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 1rem;
+}
+.carousel__top{
+  display:flex; align-items:center; justify-content:space-between; margin-bottom: .6rem;
+}
+.icon-btn--square {
+  width: 36px; height: 36px; border-radius: 10px;
+  background: var(--surface-2); border: 1px solid var(--border);
+  display:grid; place-items:center; cursor:pointer;
+}
+.icon-btn--square:hover { background: #ffefd3; }
+blockquote { margin: .5rem 0 0 0; color: var(--text); min-height: 72px; }
+.carousel__author { margin-top: .6rem; color: var(--muted); font-size: .9rem; }
+.dots { margin-top: .8rem; display:flex; gap:.35rem; justify-content:center; }
+.dot { width: 10px; height: 10px; border-radius: 999px; background: #ecd8b9; border: 0; }
+.dot--active { background: #7a4b0a; }

@@ -1,0 +1,26 @@
+.header {
+  position: sticky; top: 0; z-index: 40;
+  background: color-mix(in oklab, var(--bg) 80%, white);
+  backdrop-filter: saturate(1.2) blur(4px);
+  border-bottom: 1px solid var(--border);
+}
+.header__inner {
+  height: 64px; display:flex; align-items:center; justify-content:space-between;
+}
+.brand { display:flex; align-items:center; gap:.6rem; color: var(--text); font-weight: 700; }
+.brand__logo {
+  width: 36px; height: 36px; border-radius: 999px; display:grid; place-items:center;
+  background: var(--accent); color: #633d07; box-shadow: var(--shadow-sm); font-weight: 800;
+}
+
+.nav { display:flex; align-items:center; gap:.5rem; }
+.nav button {
+  background: transparent; border:0; padding: .55rem .8rem; border-radius: 10px;
+  color: #4e463c; font-weight: 600; cursor: pointer;
+}
+.nav button[aria-current="page"] { background: var(--surface-2); color: var(--text); }
+.nav button:hover { background: var(--surface-2); }
+.cart-btn {
+  margin-left: .5rem; display:none;
+}
+@media (min-width: 640px){ .cart-btn { display:inline-flex; } }
